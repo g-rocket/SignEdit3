@@ -6,12 +6,6 @@ import org.bukkit.event.*;
 import org.bukkit.event.block.*;
 
 public class EditBeginListener implements Listener {
-	SignEdit plugin;
-
-	public EditBeginListener(SignEdit plugin){
-		this.plugin = plugin;
-	}
-
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void beginEdit(BlockPlaceEvent e){
 		Material placedMeta = e.getBlockPlaced().getType();
