@@ -3,10 +3,10 @@
   <groupId>org.bukkit</groupId>
   <artifactId>Bukkit</artifactId>
   <versioning>
-    <release>1.7.9-R0.1</release>
+    <release>1.7.9-R0.1-signpatch</release>
     <versions>
-      <version>1.7.9-R0.1</version>
+      <version>1.7.9-R0.1-signpatch</version>
     </versions>
-    <lastUpdated>20140525184058</lastUpdated>
+    <lastUpdated>20140528193055</lastUpdated>
   </versioning>
 </metadata>

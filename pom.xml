@@ -34,12 +34,20 @@ I included such a build in the &quot;special bukkit &amp; craftbukkit&quot; fold
         </configuration>
       </plugin>
     </plugins>
+    <resources>
+      <resource>
+       <directory></directory>
+       <includes>
+        <include>plugin.yml</include>
+       </includes>
+      </resource>
+    </resources>
   </build>
   <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>Bukkit</artifactId>
-      <version>1.7.9-0.1</version>
+      <version>1.7.9-R0.1-signpatch</version>
     </dependency>
   </dependencies>
   <name>SignEdit3</name>
