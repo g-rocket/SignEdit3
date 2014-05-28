@@ -11,7 +11,7 @@ public class SignEdit extends JavaPlugin {
 	
 	public void onDisable() {
 		BlockPlaceEvent.getHandlerList().unregister(editBeginListener);
-		getLogger().info(String.format("%s %s Disabled", this.getDescription().getName(), this.getDescription().getVersion()));
+		getLogger().info(String.format("%s v%s Disabled", this.getDescription().getName(), this.getDescription().getVersion()));
 	}
 
 	public void onEnable() {
@@ -25,7 +25,7 @@ public class SignEdit extends JavaPlugin {
 			patchApplied = false;
 		}
 		if(patchApplied) {
-			getLogger().info(String.format("%s %s Enabled", this.getDescription().getName(), this.getDescription().getVersion()));
+			getLogger().info(String.format("%s v%s Enabled", this.getDescription().getName(), this.getDescription().getVersion()));
 			this.getServer().getPluginManager().registerEvents(editBeginListener, this);
 		} else {
 			getLogger().severe("This version of CraftBukkit does not appear to have the sign patch applied");
