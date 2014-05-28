@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.clonecomputers.lab</groupId>
   <artifactId>SignEdit3</artifactId>
-  <version>3.0</version>
+  <version>3.1</version>
   <description>SignEdit3 is a bukkit plugin that makes it possible to edit signs using the vanilla sign GUI
 
 When you right-click a sign while holding a sign in your hand, it edits the sign.  

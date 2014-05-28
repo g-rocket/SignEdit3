@@ -11,12 +11,12 @@ public class EditBeginListener implements Listener {
 		Material placedMeta = e.getBlockPlaced().getType();
 		Material existingMeta = e.getBlockAgainst().getType();
 		
-		if(!placedMeta.equals(Material.SIGN) && !placedMeta.equals(Material.SIGN_POST)) return;
-		if(!existingMeta.equals(Material.SIGN) && !existingMeta.equals(Material.SIGN_POST)) return;
+		if(!placedMeta.equals(Material.WALL_SIGN) && !placedMeta.equals(Material.SIGN_POST)) return;
+		if(!existingMeta.equals(Material.WALL_SIGN) && !existingMeta.equals(Material.SIGN_POST)) return;
 		if(!e.getItemInHand().getType().equals(Material.SIGN)) return;
 		if(e.getPlayer().isSneaking()) return;
 		
 		e.setCancelled(true);
-		e.getPlayer().openSign((Sign)e.getBlockAgainst(), true);
+		e.getPlayer().openSign((Sign)e.getBlockAgainst().getState(), true);
 	}
 }
