@@ -7,4 +7,4 @@ SignEdit3
 * It works by sending a “open sign GUI” packet to the client whenever you need to edit a sign.  
 * It requires a build of bukkit/craftbukkit with pull requests 1038/1345 respectively merged in to work.  
   I included such a build in the "special bukkit & craftbukkit" folder.  
-  
+* It can be built by invoking `mvn package`
